@@ -27,6 +27,6 @@ Prints every package upgraded in and since `-Syu` 7, but only until `-Syu` 4.
 
 ## Installation
 
-Put the `wat` script somewhere on your `$PATH`.
+Put the `wat` script somewhere on your `$PATH`. Also available in the [AUR][].
 
-I doubt this is worth packaging, but if someone wants to, go for it.
+[aur]: https://aur.archlinux.org/packages/wat-git/
