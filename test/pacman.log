@@ -1,0 +1,914 @@
+[2014-07-29 15:41] [PACMAN] Running 'pacman -Syu'
+[2014-07-29 15:41] [PACMAN] synchronizing package lists
+[2014-07-29 15:42] [PACMAN] starting full system upgrade
+[2014-07-29 15:43] [PACMAN] removed glamor-egl (0.6.0-1)
+[2014-07-29 15:43] [PACMAN] upgraded colord (1.2.0-1 -> 1.2.1-1)
+[2014-07-29 15:43] [PACMAN] upgraded cryptsetup (1.6.5-1 -> 1.6.5-2)
+[2014-07-29 15:43] [PACMAN] upgraded curl (7.37.0-1 -> 7.37.1-1)
+[2014-07-29 15:43] [PACMAN] upgraded iproute2 (3.14.0-1 -> 3.15.0-1)
+[2014-07-29 15:43] [PACMAN] upgraded docker (1:1.1.1-1 -> 1:1.1.2-2)
+[2014-07-29 15:43] [PACMAN] upgraded libtasn1 (3.6-1 -> 4.0-1)
+[2014-07-29 15:43] [PACMAN] upgraded gnutls (3.3.5-1 -> 3.3.6-1)
+[2014-07-29 15:43] [PACMAN] upgraded ffmpeg (1:2.2.4-3 -> 1:2.3-1)
+[2014-07-29 15:43] [PACMAN] upgraded git (2.0.2-1 -> 2.0.3-1)
+[2014-07-29 15:43] [PACMAN] installed libepoxy (1.2-2)
+[2014-07-29 15:43] [PACMAN] upgraded libxfont (1.4.7-3 -> 1.5.0-1)
+[2014-07-29 15:43] [PACMAN] upgraded libdrm (2.4.54-1 -> 2.4.55-1)
+[2014-07-29 15:43] [PACMAN] upgraded xorg-server-common (1.15.2-1 -> 1.16.0-5)
+[2014-07-29 15:43] [PACMAN] upgraded xf86-input-evdev (2.9.0-1 -> 2.9.0-2)
+[2014-07-29 15:43] [ALPM-SCRIPTLET] >>> xorg-server has now the ability to run without root rights with
+[2014-07-29 15:43] [ALPM-SCRIPTLET]     the help of systemd-logind. xserver will fail to run if not launched
+[2014-07-29 15:43] [ALPM-SCRIPTLET]     from the same virtual terminal as was used to log in.
+[2014-07-29 15:43] [ALPM-SCRIPTLET]     Without root rights, log files will be in ~/.local/share/xorg/ directory.
+[2014-07-29 15:43] [ALPM-SCRIPTLET] 
+[2014-07-29 15:43] [ALPM-SCRIPTLET]     Old behavior can be restored through Xorg.wrap config file.
+[2014-07-29 15:43] [ALPM-SCRIPTLET]     See Xorg.wrap man page (man xorg.wrap).
+[2014-07-29 15:43] [PACMAN] upgraded xorg-server (1.15.2-1 -> 1.16.0-5)
+[2014-07-29 15:43] [PACMAN] upgraded gstreamer (1.2.4-1 -> 1.4.0-1)
+[2014-07-29 15:43] [PACMAN] upgraded gst-plugins-base-libs (1.2.4-1 -> 1.4.0-1)
+[2014-07-29 15:43] [PACMAN] upgraded gst-plugins-base (1.2.4-1 -> 1.4.0-1)
+[2014-07-29 15:43] [PACMAN] upgraded libxext (1.3.2-1 -> 1.3.3-1)
+[2014-07-29 15:43] [PACMAN] upgraded imagemagick (6.8.9.5-1 -> 6.8.9.6-1)
+[2014-07-29 15:43] [PACMAN] upgraded lib32-harfbuzz (0.9.30-1 -> 0.9.32-1)
+[2014-07-29 15:43] [PACMAN] upgraded lib32-libcups (1.7.3-1 -> 1.7.4-1)
+[2014-07-29 15:43] [PACMAN] upgraded libmariadbclient (10.0.12-1 -> 10.0.12-2)
+[2014-07-29 15:43] [ALPM-SCRIPTLET] >>> Updating module dependencies. Please wait ...
+[2014-07-29 15:43] [ALPM-SCRIPTLET] >>> Generating initial ramdisk, using mkinitcpio.  Please wait...
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> Starting build: 3.15.7-1-ARCH
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> Creating gzip initcpio image: /boot/initramfs-linux.img
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> Image generation successful
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> Starting build: 3.15.7-1-ARCH
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: smsmdtv
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2014-07-29 15:43] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> Creating gzip initcpio image: /boot/initramfs-linux-fallback.img
+[2014-07-29 15:43] [ALPM-SCRIPTLET] ==> Image generation successful
+[2014-07-29 15:43] [PACMAN] upgraded linux (3.15.5-2 -> 3.15.7-1)
+[2014-07-29 15:43] [PACMAN] upgraded lirc-utils (1:0.9.0-74 -> 1:0.9.0-75)
+[2014-07-29 15:43] [PACMAN] upgraded mariadb-clients (10.0.12-1 -> 10.0.12-2)
+[2014-07-29 15:43] [PACMAN] upgraded php (5.5.14-1 -> 5.5.15-1)
+[2014-07-29 15:43] [PACMAN] upgraded postgresql-libs (9.3.4-2 -> 9.3.5-1)
+[2014-07-29 15:43] [PACMAN] upgraded postgresql (9.3.4-2 -> 9.3.5-1)
+[2014-07-29 15:43] [PACMAN] upgraded postgresql-old-upgrade (9.2.8-2 -> 9.2.9-1)
+[2014-07-29 15:43] [PACMAN] upgraded vagrant (1.6.3-1 -> 1.6.3-2)
+[2014-07-29 15:43] [ALPM-SCRIPTLET] In order to use the new version, reload all virtualbox modules manually.
+[2014-07-29 15:43] [PACMAN] upgraded virtualbox-host-modules (4.3.14-1 -> 4.3.14-3)
+[2014-07-29 15:43] [PACMAN] upgraded virtualbox (4.3.14-1 -> 4.3.14-2)
+[2014-07-29 15:43] [PACMAN] upgraded xf86-input-synaptics (1.8.0-1 -> 1.8.0-2)
+[2014-07-29 15:43] [PACMAN] upgraded xf86-video-intel (2.99.912-2 -> 2.99.914-1)
+[2014-07-29 15:43] [PACMAN] upgraded xorg-twm (1.0.8-1 -> 1.0.8-2)
+[2014-08-06 08:07] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/heroku-client-standalone/heroku-client-standalone-3.9.6-1-any.pkg.tar.xz'
+[2014-08-06 08:07] [PACMAN] upgraded heroku-client-standalone (3.8.2-1 -> 3.9.6-1)
+[2014-08-06 08:09] [PACMAN] Running '/usr/bin/pacman -S --asdeps ruby-mini_portile-0.6.0'
+[2014-08-11 11:23] [PACMAN] Running 'pacman -Syu'
+[2014-08-11 11:23] [PACMAN] synchronizing package lists
+[2014-08-11 11:23] [PACMAN] starting full system upgrade
+[2014-08-11 11:25] [PACMAN] removed lzo2 (2.08-1)
+[2014-08-11 11:25] [PACMAN] upgraded libdrm (2.4.55-1 -> 2.4.56-1)
+[2014-08-11 11:25] [PACMAN] upgraded mesa (10.2.4-1 -> 10.2.5-1)
+[2014-08-11 11:25] [PACMAN] upgraded mesa-libgl (10.2.4-1 -> 10.2.5-1)
+[2014-08-11 11:25] [PACMAN] installed lzo (2.08-3)
+[2014-08-11 11:25] [PACMAN] upgraded cairo (1.12.16-2 -> 1.12.16-3)
+[2014-08-11 11:25] [PACMAN] upgraded cpupower (3.14-3 -> 3.16-1)
+[2014-08-11 11:25] [PACMAN] upgraded openssl (1.0.1.h-1 -> 1.0.1.i-1)
+[2014-08-11 11:25] [PACMAN] upgraded libcups (1.7.4-1 -> 1.7.5-1)
+[2014-08-11 11:25] [PACMAN] upgraded cups-filters (1.0.54-1 -> 1.0.55-1)
+[2014-08-11 11:25] [PACMAN] upgraded cups (1.7.4-1 -> 1.7.5-1)
+[2014-08-11 11:25] [PACMAN] upgraded device-mapper (2.02.106-2 -> 2.02.108-1)
+[2014-08-11 11:25] [PACMAN] upgraded dhcpcd (6.4.2-1 -> 6.4.3-1)
+[2014-08-11 11:25] [PACMAN] upgraded libutil-linux (2.24.2-1 -> 2.25-3)
+[2014-08-11 11:25] [PACMAN] upgraded e2fsprogs (1.42.10-1 -> 1.42.11-1)
+[2014-08-11 11:25] [PACMAN] upgraded libx264 (1:142.20140311-4 -> 1:142.20140311-6)
+[2014-08-11 11:25] [PACMAN] upgraded ffmpeg (1:2.3-1 -> 1:2.3.1-1)
+[2014-08-11 11:25] [PACMAN] upgraded gettext (0.19.1-1 -> 0.19.2-1)
+[2014-08-11 11:25] [PACMAN] upgraded git (2.0.3-1 -> 2.0.4-1)
+[2014-08-11 11:25] [PACMAN] upgraded gstreamer0.10-ugly (0.10.19-11 -> 0.10.19-12)
+[2014-08-11 11:25] [PACMAN] upgraded gstreamer0.10-ugly-plugins (0.10.19-11 -> 0.10.19-12)
+[2014-08-11 11:25] [PACMAN] upgraded vim-runtime (7.4.373-1 -> 7.4.383-1)
+[2014-08-11 11:25] [PACMAN] upgraded gvim (7.4.373-1 -> 7.4.383-1)
+[2014-08-11 11:25] [PACMAN] upgraded intel-dri (10.2.4-1 -> 10.2.5-1)
+[2014-08-11 11:25] [PACMAN] upgraded tdb (1.2.12-1 -> 1.3.0-2)
+[2014-08-11 11:25] [PACMAN] upgraded ldb (1.1.16-1 -> 1.1.17-1)
+[2014-08-11 11:25] [PACMAN] upgraded lib32-libcups (1.7.4-1 -> 1.7.5-1)
+[2014-08-11 11:25] [PACMAN] upgraded lib32-openssl (1.0.1.h-1 -> 1.0.1.i-1)
+[2014-08-11 11:25] [PACMAN] upgraded util-linux (2.24.2-1 -> 2.25-3)
+[2014-08-11 11:25] [PACMAN] upgraded lib32-util-linux (2.24.2-1 -> 2.25-1)
+[2014-08-11 11:25] [PACMAN] upgraded libarchive (3.1.2-6 -> 3.1.2-8)
+[2014-08-11 11:25] [PACMAN] upgraded libwbclient (4.1.9-1 -> 4.1.11-1)
+[2014-08-11 11:25] [PACMAN] upgraded mkinitcpio (17-1 -> 18-1)
+[2014-08-11 11:25] [ALPM-SCRIPTLET] >>> Updating module dependencies. Please wait ...
+[2014-08-11 11:25] [ALPM-SCRIPTLET] >>> Generating initial ramdisk, using mkinitcpio.  Please wait...
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> Starting build: 3.15.8-1-ARCH
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-linux.img
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> Image generation successful
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> Starting build: 3.15.8-1-ARCH
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: smsmdtv
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2014-08-11 11:25] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-linux-fallback.img
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> Image generation successful
+[2014-08-11 11:25] [PACMAN] upgraded linux (3.15.7-1 -> 3.15.8-1)
+[2014-08-11 11:25] [PACMAN] upgraded lvm2 (2.02.106-2 -> 2.02.108-1)
+[2014-08-11 11:25] [PACMAN] upgraded smbclient (4.1.9-1 -> 4.1.11-1)
+[2014-08-11 11:25] [PACMAN] upgraded mplayer (37224-1 -> 37224-2)
+[2014-08-11 11:25] [PACMAN] upgraded nodejs (0.10.29-3 -> 0.10.30-1)
+[2014-08-11 11:25] [PACMAN] upgraded pkgbuild-introspection (3-1 -> 4-1)
+[2014-08-11 11:25] [PACMAN] upgraded python2-setuptools (1:5.4.1-1 -> 1:5.4.2-1)
+[2014-08-11 11:25] [PACMAN] upgraded s-nail (14.7.4-1 -> 14.7.5-1)
+[2014-08-11 11:25] [ALPM-SCRIPTLET] Syslinux BIOS update successful
+[2014-08-11 11:25] [ALPM-SCRIPTLET] 
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> For setting up Syslinux BIOS using the syslinux-install_update script follow 
+[2014-08-11 11:25] [ALPM-SCRIPTLET]     https://wiki.archlinux.org/index.php/Syslinux#Automatic_Install
+[2014-08-11 11:25] [ALPM-SCRIPTLET] 
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> For setting up Syslinux EFI follow
+[2014-08-11 11:25] [ALPM-SCRIPTLET]     https://wiki.archlinux.org/index.php/Syslinux#UEFI_Systems
+[2014-08-11 11:25] [ALPM-SCRIPTLET] 
+[2014-08-11 11:25] [ALPM-SCRIPTLET] ==> The syslinux-install_update script does not currently support EFI install
+[2014-08-11 11:25] [ALPM-SCRIPTLET] 
+[2014-08-11 11:25] [PACMAN] upgraded syslinux (6.03pre18-1 -> 6.03pre19-1)
+[2014-08-11 11:25] [PACMAN] upgraded tar (1.27.1-1 -> 1.28-1)
+[2014-08-11 11:25] [PACMAN] upgraded traceroute (2.0.19-2 -> 2.0.20-1)
+[2014-08-11 11:25] [PACMAN] upgraded virtualbox (4.3.14-2 -> 4.3.14-3)
+[2014-08-11 11:25] [PACMAN] upgraded wpa_supplicant (2.1-3 -> 2.2-2)
+[2014-08-11 11:25] [PACMAN] upgraded x264 (1:142.20140311-4 -> 1:142.20140311-6)
+[2014-08-11 11:25] [PACMAN] upgraded xf86-video-intel (2.99.914-1 -> 2.99.914-4)
+[2014-08-11 11:25] [PACMAN] upgraded xorg-server-common (1.16.0-5 -> 1.16.0-6)
+[2014-08-11 11:25] [PACMAN] upgraded xorg-server (1.16.0-5 -> 1.16.0-6)
+[2014-08-11 11:25] [PACMAN] upgraded xorg-twm (1.0.8-2 -> 1.0.8-3)
+[2014-08-11 11:25] [PACMAN] upgraded xorg-xrandr (1.4.2-1 -> 1.4.3-1)
+[2014-08-11 11:27] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/cengage-4ltr/chromium-pepper-flash/chromium-pepper-flash-14.0.0.145-1-x86_64.pkg.tar.xz'
+[2014-08-11 11:28] [PACMAN] reinstalled chromium-pepper-flash (14.0.0.145-1)
+[2014-08-11 11:30] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/cengage-4ltr/chromium-pepper-flash/chromium-pepper-flash-14.0.0.145-1-x86_64.pkg.tar.xz'
+[2014-08-11 11:30] [PACMAN] reinstalled chromium-pepper-flash (14.0.0.145-1)
+[2014-08-11 11:30] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/cengage-4ltr/ruby-mustache/ruby-mustache-0.99.6-1-any.pkg.tar.xz'
+[2014-08-11 11:30] [PACMAN] upgraded ruby-mustache (0.99.5-1 -> 0.99.6-1)
+[2014-08-11 16:22] [PACMAN] Running 'pacman -S skype'
+[2014-08-11 16:23] [PACMAN] installed lib32-json-c (0.12-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libgpg-error (1.13-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libgcrypt (1.6.1-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-systemd (215-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libasyncns (0.8-7)
+[2014-08-11 16:23] [PACMAN] installed lib32-attr (2.4.47-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libcap (2.24-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxdmcp (1.1.1-2)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxau (1.0.8-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxcb (1.10-3)
+[2014-08-11 16:23] [PACMAN] installed lib32-libx11 (1.6.2-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxext (1.3.3-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxfixes (5.0.1-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxi (1.7.4-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxtst (1.2.2-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libice (1.0.9-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libsm (1.2.2-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-alsa-lib (1.0.28-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libogg (1.3.1-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-flac (1.3.0-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libvorbis (1.3.4-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libsndfile (1.0.25-3)
+[2014-08-11 16:23] [PACMAN] installed lib32-libpulse (5.0-1)
+[2014-08-11 16:23] [ALPM-SCRIPTLET] updating font cache... done.
+[2014-08-11 16:23] [PACMAN] installed lib32-fontconfig (2.11.1-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-sqlite (3.8.5-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-lcms2 (2.6-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libmng (2.0.2-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libpciaccess (0.13.2-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libdrm (2.4.56-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxxf86vm (1.1.3-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxdamage (1.1.4-2)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxshmfence (1.1-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-elfutils (0.159-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-llvm-libs (3.4.2-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-wayland (1.5.0-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-mesa (10.2.5-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-mesa-libgl (10.2.5-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxrender (0.9.8-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxrandr (1.4.2-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxv (1.0.10-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-qt4 (4.8.6-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxss (1.2.2-2)
+[2014-08-11 16:23] [PACMAN] installed lib32-libxcursor (1.1.14-1)
+[2014-08-11 16:23] [PACMAN] installed lib32-v4l-utils (1.2.1-1)
+[2014-08-11 16:23] [ALPM-SCRIPTLET] Important update note: Since Skype 4.3, only PulseAudio is supported.
+[2014-08-11 16:23] [ALPM-SCRIPTLET] That means you NEED a working PulseAudio setup to use Skype for voice chatting.
+[2014-08-11 16:23] [ALPM-SCRIPTLET] If you get distorted sound in skype, try adding PULSE_LATENCY_MSEC=60 to your
+[2014-08-11 16:23] [ALPM-SCRIPTLET] env before starting skype. Something like 'export PULSE_LATENCY_MSEC=60' in .bashrc, for example.
+[2014-08-11 16:23] [PACMAN] installed skype (4.3.0.37-3)
+[2014-08-11 16:30] [PACMAN] Running 'pacman -S lib32-gtk2'
+[2014-08-11 16:30] [PACMAN] installed lib32-atk (2.12.0-1)
+[2014-08-11 16:30] [PACMAN] installed lib32-pixman (0.32.6-1)
+[2014-08-11 16:30] [PACMAN] installed lib32-cairo (1.12.16-1)
+[2014-08-11 16:30] [PACMAN] installed lib32-libxft (2.3.2-1)
+[2014-08-11 16:30] [PACMAN] installed lib32-pango (1.36.5-1)
+[2014-08-11 16:30] [PACMAN] installed lib32-gdk-pixbuf2 (2.30.8-1)
+[2014-08-11 16:30] [PACMAN] installed lib32-libxinerama (1.1.3-1)
+[2014-08-11 16:30] [PACMAN] installed lib32-libxcomposite (0.4.4-2)
+[2014-08-11 16:30] [PACMAN] installed lib32-gtk2 (2.24.24-1)
+[2014-08-11 17:34] [PACMAN] Running 'pacman -S anyconnect'
+[2014-08-11 17:34] [PACMAN] Running 'pacman -S openconnect'
+[2014-08-11 17:34] [PACMAN] installed libproxy (0.4.11-4)
+[2014-08-11 17:34] [PACMAN] installed vpnc (0.5.3.svn527-2)
+[2014-08-11 17:34] [PACMAN] installed openconnect (1:5.03-1)
+[2014-08-13 09:59] [PACMAN] Running 'pacman -S ttf-dejavu'
+[2014-08-13 09:59] [PACMAN] Running 'pacman -S ttf-dejavu'
+[2014-08-13 09:59] [PACMAN] reinstalled ttf-dejavu (2.34-1)
+[2014-08-15 08:27] [PACMAN] Running 'pacman -Syu'
+[2014-08-15 08:27] [PACMAN] synchronizing package lists
+[2014-08-15 08:27] [PACMAN] starting full system upgrade
+[2014-08-15 08:29] [PACMAN] upgraded arandr (0.1.7.1-2 -> 0.1.7.1-3)
+[2014-08-15 08:29] [PACMAN] upgraded bash (4.3.018-3 -> 4.3.022-1)
+[2014-08-15 08:29] [PACMAN] upgraded chromium (36.0.1985.125-1 -> 36.0.1985.143-1)
+[2014-08-15 08:29] [PACMAN] upgraded cracklib (2.9.0-2 -> 2.9.1-1)
+[2014-08-15 08:29] [PACMAN] upgraded dos2unix (6.0.5-1 -> 6.0.6-1)
+[2014-08-15 08:29] [PACMAN] upgraded fakeroot (1.20-1 -> 1.20.1-1)
+[2014-08-15 08:29] [PACMAN] upgraded flashplugin (11.2.202.394-1 -> 11.2.202.400-1)
+[2014-08-15 08:29] [PACMAN] upgraded go (2:1.3-1 -> 2:1.3.1-1)
+[2014-08-15 08:29] [PACMAN] upgraded gpgme (1.5.0-1 -> 1.5.1-1)
+[2014-08-15 08:29] [PACMAN] upgraded graphviz (2.36.0-3 -> 2.38.0-1)
+[2014-08-15 08:29] [PACMAN] upgraded kbd (2.0.1-1 -> 2.0.2-1)
+[2014-08-15 08:29] [PACMAN] upgraded krb5 (1.12.1-1 -> 1.12.1-2)
+[2014-08-15 08:29] [PACMAN] upgraded lib32-krb5 (1.12.1-1 -> 1.12.1-2)
+[2014-08-15 08:29] [PACMAN] upgraded xcb-proto (1.10-2 -> 1.11-1)
+[2014-08-15 08:29] [PACMAN] upgraded libxcb (1.10-3 -> 1.11-1)
+[2014-08-15 08:29] [PACMAN] upgraded lib32-libxcb (1.10-3 -> 1.11-1)
+[2014-08-15 08:29] [PACMAN] upgraded libbsd (0.6.0-2 -> 0.7.0-1)
+[2014-08-15 08:29] [PACMAN] upgraded libidn (1.28-2 -> 1.29-1)
+[2014-08-15 08:29] [PACMAN] upgraded libmariadbclient (10.0.12-2 -> 10.0.13-1)
+[2014-08-15 08:30] [ALPM-SCRIPTLET] >>> Updating module dependencies. Please wait ...
+[2014-08-15 08:30] [ALPM-SCRIPTLET] >>> Generating initial ramdisk, using mkinitcpio.  Please wait...
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> Starting build: 3.16.1-1-ARCH
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-linux.img
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> Image generation successful
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> Starting build: 3.16.1-1-ARCH
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: smsmdtv
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2014-08-15 08:30] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-linux-fallback.img
+[2014-08-15 08:30] [ALPM-SCRIPTLET] ==> Image generation successful
+[2014-08-15 08:30] [PACMAN] upgraded linux (3.15.8-1 -> 3.16.1-1)
+[2014-08-15 08:30] [PACMAN] upgraded lirc-utils (1:0.9.0-75 -> 1:0.9.0-76)
+[2014-08-15 08:30] [PACMAN] upgraded mariadb-clients (10.0.12-2 -> 10.0.13-1)
+[2014-08-15 08:30] [PACMAN] upgraded mirage (0.9.5.2-1 -> 0.9.5.2-2)
+[2014-08-15 08:30] [PACMAN] upgraded netctl (1.8-1 -> 1.9-1)
+[2014-08-15 08:30] [PACMAN] upgraded openconnect (1:5.03-1 -> 1:6.00-1)
+[2014-08-15 08:30] [PACMAN] upgraded python2-setuptools (1:5.4.2-1 -> 1:5.6-1)
+[2014-08-15 08:30] [ALPM-SCRIPTLET] In order to use the new version, reload all virtualbox modules manually.
+[2014-08-15 08:30] [PACMAN] upgraded virtualbox-host-modules (4.3.14-3 -> 4.3.14-5)
+[2014-08-15 08:30] [PACMAN] upgraded xfsprogs (3.2.0-1 -> 3.2.1-1)
+[2014-08-15 08:31] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/pbrisbin.com/ffcast/ffcast-1:2.0.0rc9-1-x86_64.pkg.tar.xz'
+[2014-08-15 08:31] [PACMAN] upgraded ffcast (1:1.0-1 -> 1:2.0.0rc9-1)
+[2014-08-15 08:31] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/pbrisbin.com/laptop-mode-tools/laptop-mode-tools-1.65-3-any.pkg.tar.xz'
+[2014-08-15 08:31] [PACMAN] upgraded laptop-mode-tools (1.65-1 -> 1.65-3)
+[2014-08-17 06:34] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/heroku-client-standalone/heroku-client-standalone/heroku-client-standalone-3.10.1-1-any.pkg.tar.xz'
+[2014-08-17 06:34] [PACMAN] upgraded heroku-client-standalone (3.9.6-1 -> 3.10.1-1)
+[2014-08-17 11:23] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/aurget/ffcast/ffcast-1:2.0.1-1-x86_64.pkg.tar.xz'
+[2014-08-17 11:23] [PACMAN] upgraded ffcast (1:2.0.0rc9-1 -> 1:2.0.1-1)
+[2014-08-17 11:25] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/aurget/chromium-plugins/chromium-pepper-flash-1:14.0.0.177-1-x86_64.pkg.tar.xz'
+[2014-08-17 11:25] [PACMAN] upgraded chromium-pepper-flash (14.0.0.145-1 -> 1:14.0.0.177-1)
+[2014-08-17 11:33] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/aurget/aurget/aurget-4.3.0-1-any.pkg.tar.xz'
+[2014-08-17 11:33] [ALPM-SCRIPTLET] 
+[2014-08-17 11:33] [ALPM-SCRIPTLET] Please use the AUR with care.
+[2014-08-17 11:33] [ALPM-SCRIPTLET] 
+[2014-08-17 11:33] [PACMAN] upgraded aurget (4.2.2-2 -> 4.3.0-1)
+[2014-08-19 17:18] [PACMAN] Running 'pacman -S urxvt-perls'
+[2014-08-19 17:18] [PACMAN] installed xsel (1.2.0-6)
+[2014-08-19 17:18] [ALPM-SCRIPTLET] -> To enable extensions place the following in ~/.Xresources
+[2014-08-19 17:18] [ALPM-SCRIPTLET]    (change to whatever suits your needs)
+[2014-08-19 17:18] [ALPM-SCRIPTLET]  URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+[2014-08-19 17:18] [ALPM-SCRIPTLET]  URxvt.url-select.launcher:  chromium
+[2014-08-19 17:18] [ALPM-SCRIPTLET]  URxvt.url-select.underline: true
+[2014-08-19 17:18] [ALPM-SCRIPTLET]  URxvt.keysym.M-u:           perl:url-select:select_next
+[2014-08-19 17:18] [ALPM-SCRIPTLET]  URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+[2014-08-19 17:18] [ALPM-SCRIPTLET]  URxvt.keysym.M-s:           perl:keyboard-select:search
+[2014-08-19 17:18] [PACMAN] installed urxvt-perls (2.1-1)
+[2014-08-21 17:07] [PACMAN] Running 'pacman -U 
+/tmp/cramtests-zJ7Biy/tmp/foo.pkg'
+[2014-08-21 17:35] [PACMAN] Running 'pacman -U'
+[2014-08-21 17:35] [PACMAN] Running 'pacman -U'
+[2014-08-21 13:38] [PACMAN] Running 'pacman -U /var/cache/pacman/pkg/xorg-server-1.16.0-6-x86_64.pkg.tar.xz /var/cache/pacman/pkg/chromium-36.0.1985.143-1-x86_64.pkg.tar.xz'
+[2014-08-21 13:39] [PACMAN] reinstalled xorg-server (1.16.0-6)
+[2014-08-21 13:39] [PACMAN] reinstalled chromium (36.0.1985.143-1)
+[2014-08-21 13:43] [PACMAN] Running 'pacman -U /var/cache/pacman/pkg/xorg-server-1.16.0-6-x86_64.pkg.tar.xz /var/cache/pacman/pkg/chromium-36.0.1985.143-1-x86_64.pkg.tar.xz'
+[2014-08-21 13:43] [PACMAN] reinstalled xorg-server (1.16.0-6)
+[2014-08-21 13:43] [PACMAN] reinstalled chromium (36.0.1985.143-1)
+[2014-08-26 14:35] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/Code/heroku-client-standalone/heroku-client-standalone/heroku-client-standalone-3.10.4-1-any.pkg.tar.xz'
+[2014-08-26 14:35] [PACMAN] upgraded heroku-client-standalone (3.10.1-1 -> 3.10.4-1)
+[2014-08-30 16:12] [PACMAN] Running 'pacman -S gparted'
+[2014-08-30 16:13] [PACMAN] Running 'pacman -S dosfstools'
+[2014-08-30 16:13] [PACMAN] installed dosfstools (3.0.26-1)
+[2014-08-30 21:15] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/aurget/aurget-4.3.1-1-any.pkg.tar.xz'
+[2014-08-30 21:15] [ALPM-SCRIPTLET] 
+[2014-08-30 21:15] [ALPM-SCRIPTLET] Please use the AUR with care.
+[2014-08-30 21:15] [ALPM-SCRIPTLET] 
+[2014-08-30 21:15] [PACMAN] upgraded aurget (4.3.0-1 -> 4.3.1-1)
+[2014-08-30 21:18] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/aurget/aurget-4.3.2-1-any.pkg.tar.xz'
+[2014-08-30 21:18] [ALPM-SCRIPTLET] 
+[2014-08-30 21:18] [ALPM-SCRIPTLET] Please use the AUR with care.
+[2014-08-30 21:18] [ALPM-SCRIPTLET] 
+[2014-08-30 21:18] [PACMAN] upgraded aurget (4.3.1-1 -> 4.3.2-1)
+[2014-08-30 21:18] [PACMAN] Running '/usr/bin/pacman -S --asdeps xrectsel'
+[2014-08-30 21:18] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/downgrade/downgrade-5.1-1-any.pkg.tar.xz'
+[2014-08-30 21:18] [PACMAN] upgraded downgrade (5.0.3-1 -> 5.1-1)
+[2014-08-30 21:18] [PACMAN] Running '/usr/bin/pacman -U --asdeps /home/patrick/xrectsel/xrectsel-0.3-1-x86_64.pkg.tar.xz'
+[2014-08-30 21:19] [PACMAN] removed ffcast (1:2.0.1-1)
+[2014-08-30 21:19] [PACMAN] installed xrectsel (0.3-1)
+[2014-08-30 22:31] [PACMAN] Running 'pacman -Syu'
+[2014-08-30 22:31] [PACMAN] synchronizing package lists
+[2014-08-30 22:31] [PACMAN] starting full system upgrade
+[2014-08-30 22:37] [PACMAN] upgraded bash (4.3.022-1 -> 4.3.024-1)
+[2014-08-30 22:37] [PACMAN] upgraded acpid (2.0.22-1 -> 2.0.23-1)
+[2014-08-30 22:37] [PACMAN] upgraded libgcrypt (1.6.1-1 -> 1.6.2-1)
+[2014-08-30 22:37] [PACMAN] upgraded libsystemd (215-4 -> 216-1)
+[2014-08-30 22:37] [PACMAN] upgraded systemd (215-4 -> 216-1)
+[2014-08-30 22:37] [PACMAN] upgraded android-udev (r104-1 -> r109-1)
+[2014-08-30 22:37] [PACMAN] upgraded avahi (0.6.31-12 -> 0.6.31-13)
+[2014-08-30 22:37] [PACMAN] upgraded harfbuzz (0.9.32-1 -> 0.9.35-1)
+[2014-08-30 22:37] [PACMAN] upgraded chromium (36.0.1985.143-1 -> 37.0.2062.94-1)
+[2014-08-30 22:37] [PACMAN] upgraded poppler (0.26.3-1 -> 0.26.4-1)
+[2014-08-30 22:37] [PACMAN] upgraded cups-filters (1.0.55-1 -> 1.0.58-1)
+[2014-08-30 22:37] [PACMAN] upgraded device-mapper (2.02.108-1 -> 2.02.109-2)
+[2014-08-30 22:37] [PACMAN] upgraded sqlite (3.8.5-1 -> 3.8.6-1)
+[2014-08-30 22:37] [PACMAN] upgraded docker (1:1.1.2-2 -> 1:1.2.0-1)
+[2014-08-30 22:37] [PACMAN] upgraded libtasn1 (4.0-1 -> 4.1-1)
+[2014-08-30 22:37] [PACMAN] upgraded gnutls (3.3.6-1 -> 3.3.7-1)
+[2014-08-30 22:37] [PACMAN] upgraded gsm (1.0.13-7 -> 1.0.13-8)
+[2014-08-30 22:38] [PACMAN] upgraded ffmpeg (1:2.3.1-1 -> 1:2.3.3-1)
+[2014-08-30 22:38] [PACMAN] upgraded git (2.0.4-1 -> 2.1.0-1)
+[2014-08-30 22:38] [PACMAN] upgraded gnupg (2.0.25-1 -> 2.0.26-1)
+[2014-08-30 22:38] [PACMAN] upgraded go (2:1.3.1-1 -> 2:1.3.1-2)
+[2014-08-30 22:38] [PACMAN] upgraded vim-runtime (7.4.383-1 -> 7.4.410-1)
+[2014-08-30 22:38] [PACMAN] upgraded gvim (7.4.383-1 -> 7.4.410-1)
+[2014-08-30 22:38] [PACMAN] upgraded harfbuzz-icu (0.9.32-1 -> 0.9.35-1)
+[2014-08-30 22:38] [PACMAN] upgraded imagemagick (6.8.9.6-1 -> 6.8.9.7-1)
+[2014-08-30 22:38] [PACMAN] upgraded mesa (10.2.5-1 -> 10.2.6-1)
+[2014-08-30 22:38] [PACMAN] upgraded mesa-libgl (10.2.5-1 -> 10.2.6-1)
+[2014-08-30 22:38] [PACMAN] upgraded intel-dri (10.2.5-1 -> 10.2.6-1)
+[2014-08-30 22:38] [PACMAN] installed zita-alsa-pcmi (0.2.0-1)
+[2014-08-30 22:38] [PACMAN] installed zita-resampler (1.3.0-2)
+[2014-08-30 22:38] [PACMAN] upgraded jack (0.124.1-1 -> 0.124.1-3)
+[2014-08-30 22:38] [ALPM] warning: /etc/profile.d/jre.sh saved as /etc/profile.d/jre.sh.pacorig
+[2014-08-30 22:38] [ALPM] warning: /etc/profile.d/jre.csh saved as /etc/profile.d/jre.csh.pacorig
+[2014-08-30 22:38] [ALPM-SCRIPTLET] Installing multiple non-conflicting Java environments is now supported
+[2014-08-30 22:38] [ALPM-SCRIPTLET] Check the following wiki section for more info:
+[2014-08-30 22:38] [ALPM-SCRIPTLET]   https://wiki.archlinux.org/index.php/Java
+[2014-08-30 22:38] [ALPM-SCRIPTLET] Please make sure JAVA_HOME is set to /usr/lib/jvm/java-default-runtime
+[2014-08-30 22:38] [ALPM-SCRIPTLET] If not, you may have to logout and login again to set it according to /etc/profile.d/jre.sh
+[2014-08-30 22:38] [PACMAN] installed java-common (1-5)
+[2014-08-30 22:38] [PACMAN] upgraded jre7-openjdk-headless (7.u65_2.5.1-3 -> 7.u65_2.5.2-1)
+[2014-08-30 22:38] [PACMAN] upgraded jre7-openjdk (7.u65_2.5.1-3 -> 7.u65_2.5.2-1)
+[2014-08-30 22:38] [PACMAN] upgraded jdk7-openjdk (7.u65_2.5.1-3 -> 7.u65_2.5.2-1)
+[2014-08-30 22:38] [PACMAN] upgraded krb5 (1.12.1-2 -> 1.12.2-1)
+[2014-08-30 22:38] [PACMAN] upgraded lib32-harfbuzz (0.9.32-1 -> 0.9.35-1)
+[2014-08-30 22:38] [PACMAN] upgraded lib32-krb5 (1.12.1-2 -> 1.12.2-1)
+[2014-08-30 22:38] [PACMAN] upgraded lib32-libgcrypt (1.6.1-1 -> 1.6.2-1)
+[2014-08-30 22:38] [PACMAN] installed lib32-libssh2 (1.4.3-2)
+[2014-08-30 22:38] [PACMAN] installed lib32-curl (7.37.1-1)
+[2014-08-30 22:38] [PACMAN] upgraded lib32-systemd (215-1 -> 216-1)
+[2014-08-30 22:38] [PACMAN] upgraded lib32-mesa (10.2.5-1 -> 10.2.6-1)
+[2014-08-30 22:38] [PACMAN] upgraded lib32-mesa-libgl (10.2.5-1 -> 10.2.6-1)
+[2014-08-30 22:38] [PACMAN] upgraded pango (1.36.5-1 -> 1.36.6-1)
+[2014-08-30 22:38] [PACMAN] upgraded lib32-pango (1.36.5-1 -> 1.36.6-1)
+[2014-08-30 22:38] [PACMAN] upgraded lib32-sqlite (3.8.5-1 -> 3.8.6-1)
+[2014-08-30 22:38] [PACMAN] upgraded libedit (20140213_3.1-1 -> 20140620_3.1-1)
+[2014-08-30 22:38] [PACMAN] upgraded libnl (3.2.24-1 -> 3.2.25-1)
+[2014-08-30 22:38] [PACMAN] upgraded libpcap (1.5.3-1 -> 1.6.1-1)
+[2014-08-30 22:38] [PACMAN] upgraded libxkbcommon (0.4.2-1 -> 0.4.3-1)
+[2014-08-30 22:38] [PACMAN] upgraded libxkbcommon-x11 (0.4.2-1 -> 0.4.3-1)
+[2014-08-30 22:38] [ALPM-SCRIPTLET] :: lirc.service and lircm.service have been replaced
+[2014-08-30 22:38] [ALPM-SCRIPTLET]    by the upstream unit files lircd.service and
+[2014-08-30 22:38] [ALPM-SCRIPTLET]    lircmd.service.
+[2014-08-30 22:38] [PACMAN] upgraded lirc-utils (1:0.9.0-76 -> 1:0.9.1.a-3)
+[2014-08-30 22:38] [PACMAN] installed thin-provisioning-tools (0.3.2-1)
+[2014-08-30 22:38] [PACMAN] upgraded lvm2 (2.02.108-1 -> 2.02.109-2)
+[2014-08-30 22:38] [PACMAN] upgraded man-pages (3.70-1 -> 3.71-1)
+[2014-08-30 22:38] [PACMAN] upgraded nmap (6.46-1 -> 6.47-2)
+[2014-08-30 22:38] [PACMAN] upgraded nodejs (0.10.30-1 -> 0.10.31-3)
+[2014-08-30 22:38] [ALPM-SCRIPTLET] ==> Please note that due to security reasons from version 0.9 on the 
+[2014-08-30 22:38] [ALPM-SCRIPTLET]     minimal mDNS stack included in nss-mdns (dubbed "legacy") is no 
+[2014-08-30 22:38] [ALPM-SCRIPTLET]     longer built - nss-mdns will not work unless Avahi is running.
+[2014-08-30 22:38] [ALPM-SCRIPTLET] ==> To enable IPv4 multicast DNS lookups, append 'mdns4' to the hosts line
+[2014-08-30 22:38] [ALPM-SCRIPTLET]     in /etc/nsswitch.conf. Use 'mdns6' for IPv6 or 'mdns' for both.
+[2014-08-30 22:38] [PACMAN] upgraded nss-mdns (0.10-5 -> 0.10-6)
+[2014-08-30 22:38] [PACMAN] upgraded ntp (4.2.7.p446-1 -> 4.2.7.p465-1)
+[2014-08-30 22:38] [PACMAN] upgraded openal (1.15.1-2 -> 1.16.0-1)
+[2014-08-30 22:38] [PACMAN] upgraded openresolv (3.5.6-1 -> 3.5.7-1)
+[2014-08-30 22:38] [ALPM] warning: /etc/pacman.d/mirrorlist installed as /etc/pacman.d/mirrorlist.pacnew
+[2014-08-30 22:38] [PACMAN] upgraded pacman-mirrorlist (20140706-1 -> 20140823-1)
+[2014-08-30 22:38] [PACMAN] upgraded perl-mime-types (2.04-1 -> 2.06-1)
+[2014-08-30 22:38] [PACMAN] upgraded php (5.5.15-1 -> 5.5.16-2)
+[2014-08-30 22:38] [PACMAN] upgraded poppler-glib (0.26.3-1 -> 0.26.4-1)
+[2014-08-30 22:38] [PACMAN] upgraded python2-setuptools (1:5.6-1 -> 1:5.7-1)
+[2014-08-30 22:38] [PACMAN] upgraded s-nail (14.7.5-1 -> 14.7.6-1)
+[2014-08-30 22:38] [PACMAN] upgraded strace (4.8-1 -> 4.9-1)
+[2014-08-30 22:38] [PACMAN] upgraded systemd-sysvcompat (215-4 -> 216-1)
+[2014-08-30 22:38] [PACMAN] upgraded tcpdump (4.5.1-1 -> 4.6.1-1)
+[2014-08-30 22:38] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:38] [PACMAN] upgraded texlive-bin (2013.30973-10 -> 2014.34260-1)
+[2014-08-30 22:38] [ALPM-SCRIPTLET] >>> texlive: saving updmap.cfg as /tmp/tmp.YmXJ577EK6...
+[2014-08-30 22:38] [ALPM-SCRIPTLET] >>> texlive: regenerating updmap.cfg (custom additions should go
+[2014-08-30 22:38] [ALPM-SCRIPTLET]              into /etc/texmf/web2c/updmap-local.cfg
+[2014-08-30 22:38] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:38] [ALPM-SCRIPTLET] >>> texlive: updating the fontmap files with updmap...
+[2014-08-30 22:38] [ALPM-SCRIPTLET]  done.
+[2014-08-30 22:38] [ALPM-SCRIPTLET] >>> texlive: recreating all formats...
+[2014-08-30 22:38] [ALPM-SCRIPTLET]  done.
+[2014-08-30 22:38] [ALPM-SCRIPTLET]  (logs are under /var/lib/texmf/web2c/<engine>/<formatname>.log)
+[2014-08-30 22:38] [ALPM-SCRIPTLET] NB: To setup ConTeXt and the lua(la)tex font db,
+[2014-08-30 22:38] [ALPM-SCRIPTLET]     see http://wiki.archlinux.org/index.php/TeX_Live
+[2014-08-30 22:38] [PACMAN] upgraded texlive-core (2013.33063-1 -> 2014.34872-1)
+[2014-08-30 22:38] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:38] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:38] [PACMAN] upgraded texlive-bibtexextra (2013.33039-1 -> 2014.34822-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: saving updmap.cfg as /tmp/tmp.umwkiGRg5H...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: regenerating updmap.cfg (custom additions should go
+[2014-08-30 22:39] [ALPM-SCRIPTLET]              into /etc/texmf/web2c/updmap-local.cfg
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the fontmap files with updmap...
+[2014-08-30 22:39] [ALPM-SCRIPTLET]  done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-fontsextra (2013.33010-1 -> 2014.34817-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-formatsextra (2013.31958-1 -> 2014.33826-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: saving updmap.cfg as /tmp/tmp.wtwNZBdM9d...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: regenerating updmap.cfg (custom additions should go
+[2014-08-30 22:39] [ALPM-SCRIPTLET]              into /etc/texmf/web2c/updmap-local.cfg
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the fontmap files with updmap...
+[2014-08-30 22:39] [ALPM-SCRIPTLET]  done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-games (2013.32919-1 -> 2014.34491-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-genericextra (2013.32809-1 -> 2014.34393-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-htmlxml (2013.33024-1 -> 2014.34624-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: saving updmap.cfg as /tmp/tmp.MLJr5ERF7c...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: regenerating updmap.cfg (custom additions should go
+[2014-08-30 22:39] [ALPM-SCRIPTLET]              into /etc/texmf/web2c/updmap-local.cfg
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the fontmap files with updmap...
+[2014-08-30 22:39] [ALPM-SCRIPTLET]  done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-latexextra (2013.33063-1 -> 2014.34865-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-humanities (2013.33061-1 -> 2014.34877-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: saving updmap.cfg as /tmp/tmp.LMaYZQLVUL...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: regenerating updmap.cfg (custom additions should go
+[2014-08-30 22:39] [ALPM-SCRIPTLET]              into /etc/texmf/web2c/updmap-local.cfg
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the fontmap files with updmap...
+[2014-08-30 22:39] [ALPM-SCRIPTLET]  done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-music (2013.32525-1 -> 2014.33826-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: saving updmap.cfg as /tmp/tmp.7kS79QVSkn...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: regenerating updmap.cfg (custom additions should go
+[2014-08-30 22:39] [ALPM-SCRIPTLET]              into /etc/texmf/web2c/updmap-local.cfg
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the fontmap files with updmap...
+[2014-08-30 22:39] [ALPM-SCRIPTLET]  done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-pictures (2013.33045-1 -> 2014.34851-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-plainextra (2013.32911-1 -> 2014.34228-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-pstricks (2013.33056-1 -> 2014.34856-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-publishers (2013.33042-1 -> 2014.34878-1)
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: saving updmap.cfg as /tmp/tmp.OEdb3OGoI5...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: regenerating updmap.cfg (custom additions should go
+[2014-08-30 22:39] [ALPM-SCRIPTLET]              into /etc/texmf/web2c/updmap-local.cfg
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the filename database...
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /etc/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /usr/share/texmf-dist/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Updating /var/lib/texmf/ls-R... 
+[2014-08-30 22:39] [ALPM-SCRIPTLET] mktexlsr: Done.
+[2014-08-30 22:39] [ALPM-SCRIPTLET] >>> texlive: updating the fontmap files with updmap...
+[2014-08-30 22:39] [ALPM-SCRIPTLET]  done.
+[2014-08-30 22:39] [PACMAN] upgraded texlive-science (2013.32850-1 -> 2014.34853-1)
+[2014-08-30 22:39] [PACMAN] upgraded tzdata (2014e-1 -> 2014f-1)
+[2014-08-30 22:39] [PACMAN] upgraded xf86-input-synaptics (1.8.0-2 -> 1.8.0-3)
+[2014-08-30 22:39] [PACMAN] upgraded xorg-xinit (1.3.3-3 -> 1.3.3-4)
+[2014-09-01 14:09] [PACMAN] Running '/usr/bin/pacman -S --asdeps cmake'
+[2014-09-01 14:09] [PACMAN] installed cmake (3.0.1-1)
+[2014-09-01 14:10] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/tmate/tmate-1.8.9-1-x86_64.pkg.tar.xz'
+[2014-09-01 14:11] [PACMAN] installed tmate (1.8.9-1)
+[2014-09-01 14:22] [PACMAN] Running 'pacman -S emacs'
+[2014-09-01 14:23] [PACMAN] installed libotf (0.9.13-2)
+[2014-09-01 14:23] [PACMAN] installed m17n-db (1.6.5-2)
+[2014-09-01 14:23] [PACMAN] installed m17n-lib (1.6.4-2)
+[2014-09-01 14:23] [PACMAN] installed gconf (3.2.6-3)
+[2014-09-01 14:23] [PACMAN] installed emacs (24.3-7)
+[2014-09-01 18:09] [PACMAN] Running 'pacman -Rsn emacs'
+[2014-09-01 18:09] [PACMAN] removed emacs (24.3-7)
+[2014-09-01 18:09] [PACMAN] removed m17n-lib (1.6.4-2)
+[2014-09-01 18:09] [PACMAN] removed m17n-db (1.6.5-2)
+[2014-09-01 18:09] [PACMAN] removed libotf (0.9.13-2)
+[2014-09-01 18:09] [PACMAN] removed gconf (3.2.6-3)
+[2014-09-01 20:35] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/exercism-cli/exercism-cli-v1.5.0-1-x86_64.pkg.tar.xz'
+[2014-09-01 20:35] [PACMAN] installed exercism-cli (v1.5.0-1)
+[2014-09-01 22:03] [PACMAN] Running 'pacman -Syu'
+[2014-09-01 22:03] [PACMAN] synchronizing package lists
+[2014-09-01 22:03] [PACMAN] starting full system upgrade
+[2014-09-01 22:04] [PACMAN] upgraded gstreamer (1.4.0-1 -> 1.4.1-1)
+[2014-09-01 22:04] [PACMAN] upgraded gst-plugins-base-libs (1.4.0-1 -> 1.4.1-1)
+[2014-09-01 22:04] [PACMAN] upgraded gst-plugins-base (1.4.0-1 -> 1.4.1-1)
+[2014-09-01 22:04] [ALPM-SCRIPTLET] Installing multiple non-conflicting Java environments is now supported
+[2014-09-01 22:04] [ALPM-SCRIPTLET] Check the following wiki section for more info:
+[2014-09-01 22:04] [ALPM-SCRIPTLET]   https://wiki.archlinux.org/index.php/Java
+[2014-09-01 22:04] [ALPM-SCRIPTLET] Please make sure JAVA_HOME is set to /usr/lib/jvm/default
+[2014-09-01 22:04] [ALPM-SCRIPTLET] If not, you may have to logout and login again to set it according to /etc/profile.d/jre.sh
+[2014-09-01 22:04] [PACMAN] upgraded java-common (1-5 -> 1-6)
+[2014-09-01 22:04] [ALPM] warning: /etc/pacman.d/mirrorlist installed as /etc/pacman.d/mirrorlist.pacnew
+[2014-09-01 22:04] [PACMAN] upgraded pacman-mirrorlist (20140823-1 -> 20140901-1)
+[2014-09-01 22:04] [PACMAN] upgraded pygobject2-devel (2.28.6-10 -> 2.28.6-11)
+[2014-09-01 22:04] [PACMAN] upgraded python2-gobject2 (2.28.6-10 -> 2.28.6-11)
+[2014-09-03 20:29] [PACMAN] Running '/usr/bin/pacman --noconfirm -U /home/patrick/Code/heroku-client-standalone/heroku-client-standalone/heroku-client-standalone-3.10.5-1-any.pkg.tar.xz'
+[2014-09-03 20:29] [PACMAN] upgraded heroku-client-standalone (3.10.4-1 -> 3.10.5-1)
+[2014-09-05 13:33] [PACMAN] Running 'pacman -Syu'
+[2014-09-05 13:33] [PACMAN] synchronizing package lists
+[2014-09-05 13:33] [PACMAN] starting full system upgrade
+[2014-09-05 13:34] [PACMAN] upgraded libsystemd (216-1 -> 216-3)
+[2014-09-05 13:34] [ALPM-SCRIPTLET] :: Coredumps are handled by systemd by default. Collection behavior can be
+[2014-09-05 13:34] [ALPM-SCRIPTLET]    tuned in /etc/systemd/coredump.conf.
+[2014-09-05 13:34] [PACMAN] upgraded systemd (216-1 -> 216-3)
+[2014-09-05 13:34] [PACMAN] upgraded device-mapper (2.02.109-2 -> 2.02.111-1)
+[2014-09-05 13:34] [PACMAN] upgraded cryptsetup (1.6.5-2 -> 1.6.6-1)
+[2014-09-05 13:34] [ALPM-SCRIPTLET] Installing multiple non-conflicting Java environments is now supported
+[2014-09-05 13:34] [ALPM-SCRIPTLET] Check the following wiki section for more info:
+[2014-09-05 13:34] [ALPM-SCRIPTLET]   https://wiki.archlinux.org/index.php/Java
+[2014-09-05 13:34] [ALPM-SCRIPTLET] Please make sure JAVA_HOME is set to /usr/lib/jvm/default
+[2014-09-05 13:34] [ALPM-SCRIPTLET] If not, you may have to logout and login again to set it according to /etc/profile.d/jre.sh
+[2014-09-05 13:34] [PACMAN] upgraded java-common (1-6 -> 1-7)
+[2014-09-05 13:34] [PACMAN] upgraded linux-firmware (20140603.a4f3bc0-1 -> 20140828.13eb208-1)
+[2014-09-05 13:34] [PACMAN] upgraded lvm2 (2.02.109-2 -> 2.02.111-1)
+[2014-09-05 13:34] [PACMAN] upgraded nodejs (0.10.31-3 -> 0.10.31-4)
+[2014-09-05 13:34] [PACMAN] upgraded ppp (2.4.6-2 -> 2.4.7-1)
+[2014-09-05 13:34] [PACMAN] upgraded python2-pyenchant (1.6.5-3 -> 1.6.6-1)
+[2014-09-05 13:34] [PACMAN] upgraded ruby-mustache (0.99.6-1 -> 0.99.6-2)
+[2014-09-05 13:34] [PACMAN] upgraded systemd-sysvcompat (216-1 -> 216-3)
+[2014-09-05 13:34] [PACMAN] upgraded tcpdump (4.6.1-1 -> 4.6.2-1)
+[2014-09-05 13:34] [PACMAN] upgraded vagrant (1.6.3-2 -> 1.6.5-1)
+[2014-09-05 13:34] [PACMAN] upgraded virtualbox (4.3.14-3 -> 4.3.14-4)
+[2014-09-07 14:31] [PACMAN] Running 'pacman -S notmuch'
+[2014-09-07 14:31] [PACMAN] installed notmuch (0.18.1-1)
+[2014-09-07 14:34] [PACMAN] Running 'pacman -S python'
+[2014-09-07 14:34] [PACMAN] reinstalled python (3.4.1-1)
+[2014-09-12 10:50] [PACMAN] Running 'pacman -U ghu-0.0.2-1-any.pkg.tar.xz'
+[2014-09-12 10:50] [PACMAN] installed ghu (0.0.2-1)
+[2014-09-12 11:09] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/ghu/ghu-0.0.4-1-any.pkg.tar.xz'
+[2014-09-12 11:09] [PACMAN] upgraded ghu (0.0.2-1 -> 0.0.4-1)
+[2014-09-12 16:59] [PACMAN] Running 'pacman -Syu'
+[2014-09-12 16:59] [PACMAN] synchronizing package lists
+[2014-09-12 16:59] [PACMAN] starting full system upgrade
+[2014-09-12 17:01] [PACMAN] upgraded chromium (37.0.2062.94-1 -> 37.0.2062.120-1)
+[2014-09-12 17:01] [PACMAN] upgraded cmake (3.0.1-1 -> 3.0.2-1)
+[2014-09-12 17:01] [PACMAN] upgraded colord (1.2.1-1 -> 1.2.2-1)
+[2014-09-12 17:01] [PACMAN] upgraded dirmngr (1.1.1-2 -> 1.1.1-3)
+[2014-09-12 17:01] [PACMAN] upgraded libx264 (1:142.20140311-6 -> 1:142.20140826-1)
+[2014-09-12 17:01] [PACMAN] upgraded x265 (1.2-1 -> 1.3-1)
+[2014-09-12 17:01] [PACMAN] upgraded ffmpeg (1:2.3.3-1 -> 1:2.3.3-2)
+[2014-09-12 17:01] [PACMAN] upgraded flashplugin (11.2.202.400-1 -> 11.2.202.406-1)
+[2014-09-12 17:01] [PACMAN] upgraded gc (7.4.2-1 -> 7.4.2-2)
+[2014-09-12 17:01] [PACMAN] upgraded glib2 (2.40.0-1 -> 2.40.0-2)
+[2014-09-12 17:01] [PACMAN] upgraded llvm-libs (3.4.2-1 -> 3.5.0-2.1)
+[2014-09-12 17:01] [PACMAN] upgraded mesa (10.2.6-1 -> 10.2.7-3)
+[2014-09-12 17:01] [PACMAN] upgraded mesa-libgl (10.2.6-1 -> 10.2.7-3)
+[2014-09-12 17:01] [PACMAN] upgraded intel-dri (10.2.6-1 -> 10.2.7-3)
+[2014-09-12 17:01] [ALPM-SCRIPTLET] Please make sure JAVA_HOME is set to /usr/lib/jvm/default
+[2014-09-12 17:01] [ALPM-SCRIPTLET] If not, you may have to logout and login again to set it according to /etc/profile.d/jre.sh
+[2014-09-12 17:01] [PACMAN] upgraded java-common (1-7 -> 1-8)
+[2014-09-12 17:01] [PACMAN] upgraded libpng (1.6.12-1 -> 1.6.13-1)
+[2014-09-12 17:01] [PACMAN] upgraded lib32-libpng (1.6.12-1 -> 1.6.13-1)
+[2014-09-12 17:01] [PACMAN] upgraded lib32-llvm-libs (3.4.2-1 -> 3.5.0-1)
+[2014-09-12 17:01] [PACMAN] upgraded lib32-mesa (10.2.6-1 -> 10.2.7-2)
+[2014-09-12 17:01] [PACMAN] upgraded lib32-mesa-libgl (10.2.6-1 -> 10.2.7-2)
+[2014-09-12 17:01] [PACMAN] upgraded libpcap (1.6.1-1 -> 1.6.2-1)
+[2014-09-12 17:01] [PACMAN] upgraded libwbclient (4.1.11-1 -> 4.1.12-1)
+[2014-09-12 17:01] [PACMAN] upgraded libwnck3 (3.4.7-1 -> 3.4.9-1)
+[2014-09-12 17:01] [PACMAN] upgraded mkinitcpio (18-1 -> 18-2)
+[2014-09-12 17:01] [ALPM-SCRIPTLET] >>> Updating module dependencies. Please wait ...
+[2014-09-12 17:01] [ALPM-SCRIPTLET] >>> Generating initial ramdisk, using mkinitcpio.  Please wait...
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> Starting build: 3.16.2-1-ARCH
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-linux.img
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> Image generation successful
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> Starting build: 3.16.2-1-ARCH
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: smsmdtv
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2014-09-12 17:01] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-linux-fallback.img
+[2014-09-12 17:01] [ALPM-SCRIPTLET] ==> Image generation successful
+[2014-09-12 17:01] [PACMAN] upgraded linux (3.16.1-1 -> 3.16.2-1)
+[2014-09-12 17:01] [PACMAN] upgraded ntp (4.2.7.p465-1 -> 4.2.7.p465-2)
+[2014-09-12 17:01] [PACMAN] upgraded scrot (0.8-7 -> 0.8.13-1)
+[2014-09-12 17:01] [PACMAN] upgraded smbclient (4.1.11-1 -> 4.1.12-1)
+[2014-09-12 17:01] [PACMAN] upgraded thin-provisioning-tools (0.3.2-1 -> 0.4.1-1)
+[2014-09-12 17:01] [PACMAN] upgraded tzdata (2014f-1 -> 2014g-1)
+[2014-09-12 17:01] [PACMAN] upgraded upower (0.99.0-2 -> 0.99.0-3)
+[2014-09-12 17:01] [PACMAN] upgraded virtualbox-host-modules (4.3.14-5 -> 4.3.16-1)
+[2014-09-12 17:01] [PACMAN] upgraded virtualbox (4.3.14-4 -> 4.3.16-1)
+[2014-09-12 17:01] [PACMAN] upgraded x264 (1:142.20140311-6 -> 1:142.20140826-1)
+[2014-09-12 17:01] [PACMAN] upgraded xf86-video-intel (2.99.914-4 -> 2.99.916-1)
+[2014-09-12 17:01] [PACMAN] upgraded xorg-xinit (1.3.3-4 -> 1.3.4-1)
+[2014-09-12 17:02] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/.dotfiles/cups-bjnp/cups-bjnp-2.0-1-x86_64.pkg.tar.xz'
+[2014-09-12 17:02] [PACMAN] upgraded cups-bjnp (1.2.2-1 -> 2.0-1)
+[2014-09-12 17:03] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/.dotfiles/chromium-plugins/chromium-pepper-flash-1:15.0.0.152-1-x86_64.pkg.tar.xz'
+[2014-09-12 17:03] [PACMAN] upgraded chromium-pepper-flash (1:14.0.0.177-1 -> 1:15.0.0.152-1)
+[2014-09-12 17:03] [PACMAN] Running '/usr/bin/pacman -U /home/patrick/.dotfiles/xrectsel/xrectsel-0.3.1-1-x86_64.pkg.tar.xz'
+[2014-09-12 17:03] [PACMAN] upgraded xrectsel (0.3-1 -> 0.3.1-1)
+[2014-09-12 17:03] [PACMAN] Running 'pacman -Syu'
+[2014-09-12 17:03] [PACMAN] synchronizing package lists
+[2014-09-12 17:03] [PACMAN] starting full system upgrade
+[2014-09-12 17:04] [PACMAN] upgraded firefox (20.0.1-5 -> 32.0-1)
+[2014-09-17 14:39] [PACMAN] Running '/usr/bin/pacman --noconfirm -U /home/patrick/Code/heroku-client-standalone/heroku-client-standalone/heroku-client-standalone-3.11.1-1-any.pkg.tar.xz'
+[2014-09-17 14:39] [PACMAN] upgraded heroku-client-standalone (3.10.5-1 -> 3.11.1-1)
+[2014-09-19 12:48] [PACMAN] Running 'pacman -S dunst'
+[2014-09-19 12:48] [PACMAN] installed libxdg-basedir (1.2.0-2)
+[2014-09-19 12:48] [PACMAN] installed dunst (1.1.0-1)
+[2014-09-19 12:48] [PACMAN] Running 'pacman -Rsn notify-osd-customizable'
+[2014-09-19 12:48] [PACMAN] removed notify-osd-customizable (0.9.35-3)
+[2014-09-19 12:48] [PACMAN] removed libwnck3 (3.4.9-1)
+[2014-09-19 12:48] [PACMAN] removed libxres (1.0.7-1)
+[2014-09-19 12:48] [PACMAN] removed gsettings-desktop-schemas (3.12.2-1)
+[2014-09-19 12:48] [PACMAN] Running 'pacman -S dunst'
+[2014-09-19 12:48] [PACMAN] reinstalled dunst (1.1.0-1)
+[2014-09-19 12:51] [PACMAN] Running 'pacman -Syu'
+[2014-09-19 12:51] [PACMAN] synchronizing package lists
+[2014-09-19 12:51] [PACMAN] starting full system upgrade
+[2014-09-19 12:53] [ALPM-SCRIPTLET] ==> Appending keys from archlinux.gpg...
+[2014-09-19 12:53] [ALPM-SCRIPTLET] gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+[2014-09-19 12:53] [ALPM-SCRIPTLET] gpg: depth: 0  valid:   1  signed:   5  trust: 0-, 0q, 0n, 0m, 0f, 1u
+[2014-09-19 12:53] [ALPM-SCRIPTLET] gpg: depth: 1  valid:   5  signed:  61  trust: 0-, 0q, 0n, 5m, 0f, 0u
+[2014-09-19 12:53] [ALPM-SCRIPTLET] gpg: depth: 2  valid:  60  signed:   4  trust: 60-, 0q, 0n, 0m, 0f, 0u
+[2014-09-19 12:53] [ALPM-SCRIPTLET] gpg: next trustdb check due at 2015-03-31
+[2014-09-19 12:53] [ALPM-SCRIPTLET] ==> Locally signing trusted keys in keyring...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Locally signing key 0E8B644079F599DFC1DDC3973348882F6AC6A4C2...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Locally signing key 684148BB25B49E986A4944C55184252D824B18E8...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Locally signing key 44D4A033AC140143927397D47EFD567D4C7EA887...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Locally signing key 27FFC4769E19F096D41D9265A04F9397CDFD6BB0...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Locally signing key AB19265E5D7D20687D303246BA1DFB64FFF979E7...
+[2014-09-19 12:53] [ALPM-SCRIPTLET] ==> Importing owner trust values...
+[2014-09-19 12:53] [ALPM-SCRIPTLET] ==> Disabling revoked keys in keyring...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key F5A361A3A13554B85E57DDDAAF7EF7873CFD4BB6...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key 7FA647CD89891DEDC060287BB9113D1ED21E1A55...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key D4DE5ABDE2A7287644EAC7E36D1A9E70E19DAA50...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key BC1FBE4D2826A0B51E47ED62E2539214C6C11350...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key 4A8B17E20B88ACA61860009B5CED81B7C2E5C0D2...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key 63F395DE2D6398BBE458F281F2DBB4931985A992...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key 0B20CA1931F5DA3A70D0F8D2EA6836E1AB441196...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key 8F76BEEA0289F9E1D3E229C05F946DED983D4366...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key 66BD74A036D522F51DD70A3C7F2A16726521E06D...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key 81D7F8241DB38BC759C80FCE3A726C6170E80477...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   -> Disabling key E7210A59715F6940CF9A4E36A001876699AD6E84...
+[2014-09-19 12:53] [ALPM-SCRIPTLET] ==> Updating trust database...
+[2014-09-19 12:53] [ALPM-SCRIPTLET] gpg: next trustdb check due at 2015-03-31
+[2014-09-19 12:53] [PACMAN] upgraded archlinux-keyring (20140220-1 -> 20140908-1)
+[2014-09-19 12:53] [PACMAN] upgraded linux-api-headers (3.14.1-1 -> 3.16.2-1)
+[2014-09-19 12:53] [ALPM] warning: /etc/locale.gen installed as /etc/locale.gen.pacnew
+[2014-09-19 12:53] [ALPM-SCRIPTLET] Generating locales...
+[2014-09-19 12:53] [ALPM-SCRIPTLET]   en_US.UTF-8... done
+[2014-09-19 12:53] [ALPM-SCRIPTLET] Generation complete.
+[2014-09-19 12:53] [PACMAN] upgraded glibc (2.19-5 -> 2.20-2)
+[2014-09-19 12:53] [PACMAN] upgraded binutils (2.24-6 -> 2.24-7)
+[2014-09-19 12:53] [PACMAN] upgraded ca-certificates-java (20140324-3 -> 20140324-4)
+[2014-09-19 12:54] [PACMAN] upgraded chromium (37.0.2062.120-1 -> 37.0.2062.120-2)
+[2014-09-19 12:54] [PACMAN] upgraded curl (7.37.1-1 -> 7.38.0-1)
+[2014-09-19 12:54] [PACMAN] upgraded firefox (32.0-1 -> 32.0.1-1)
+[2014-09-19 12:54] [PACMAN] upgraded lib32-glibc (2.19-5 -> 2.20-2)
+[2014-09-19 12:54] [PACMAN] upgraded lib32-gcc-libs (4.9.1-1 -> 4.9.1-2)
+[2014-09-19 12:54] [PACMAN] upgraded gcc-libs-multilib (4.9.1-1 -> 4.9.1-2)
+[2014-09-19 12:54] [PACMAN] upgraded gcc-multilib (4.9.1-1 -> 4.9.1-2)
+[2014-09-19 12:54] [PACMAN] upgraded gd (2.1.0-2 -> 2.1.0-3)
+[2014-09-19 12:54] [PACMAN] upgraded libunistring (0.9.3-6 -> 0.9.4-1)
+[2014-09-19 12:54] [PACMAN] upgraded gettext (0.19.2-1 -> 0.19.2-2)
+[2014-09-19 12:54] [PACMAN] upgraded graphviz (2.38.0-1 -> 2.38.0-2)
+[2014-09-19 12:54] [PACMAN] upgraded zsh (5.0.5-1 -> 5.0.6-1)
+[2014-09-19 12:54] [PACMAN] upgraded grml-zsh-config (0.9.6-1 -> 0.10.0-1)
+[2014-09-19 12:54] [PACMAN] upgraded guile (2.0.11-1 -> 2.0.11-2)
+[2014-09-19 12:54] [PACMAN] upgraded jre7-openjdk-headless (7.u65_2.5.2-1 -> 7.u65_2.5.2-2)
+[2014-09-19 12:54] [PACMAN] upgraded jre7-openjdk (7.u65_2.5.2-1 -> 7.u65_2.5.2-2)
+[2014-09-19 12:54] [PACMAN] upgraded jdk7-openjdk (7.u65_2.5.2-1 -> 7.u65_2.5.2-2)
+[2014-09-19 12:54] [PACMAN] upgraded lib32-curl (7.37.1-1 -> 7.38.0-1)
+[2014-09-19 12:54] [PACMAN] upgraded libevdev (1.2.2-1 -> 1.3-1)
+[2014-09-19 12:54] [PACMAN] upgraded libgpg-error (1.13-1 -> 1.14-1)
+[2014-09-19 12:54] [PACMAN] upgraded libutil-linux (2.25-3 -> 2.25.1-1)
+[2014-09-19 12:54] [ALPM-SCRIPTLET] >>> Updating module dependencies. Please wait ...
+[2014-09-19 12:54] [ALPM-SCRIPTLET] >>> Generating initial ramdisk, using mkinitcpio.  Please wait...
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> Starting build: 3.16.3-1-ARCH
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-linux.img
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> Image generation successful
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> Starting build: 3.16.3-1-ARCH
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: smsmdtv
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2014-09-19 12:54] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-linux-fallback.img
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> Image generation successful
+[2014-09-19 12:54] [PACMAN] upgraded linux (3.16.2-1 -> 3.16.3-1)
+[2014-09-19 12:54] [PACMAN] upgraded lirc-utils (1:0.9.1.a-3 -> 1:0.9.1.a-4)
+[2014-09-19 12:54] [PACMAN] upgraded man-pages (3.71-1 -> 3.72-1)
+[2014-09-19 12:54] [PACMAN] upgraded mpg123 (1.20.0-1 -> 1.20.1-1)
+[2014-09-19 12:54] [PACMAN] upgraded nodejs (0.10.31-4 -> 0.10.32-2)
+[2014-09-19 12:54] [PACMAN] upgraded perl-mime-types (2.06-1 -> 2.09-1)
+[2014-09-19 12:54] [PACMAN] upgraded perl-mail-box (2.115-1 -> 2.117-1)
+[2014-09-19 12:54] [PACMAN] installed libzip (0.11.2-1)
+[2014-09-19 12:54] [ALPM] warning: /etc/php/php.ini installed as /etc/php/php.ini.pacnew
+[2014-09-19 12:54] [PACMAN] upgraded php (5.5.16-2 -> 5.6.0-6)
+[2014-09-19 12:54] [PACMAN] upgraded python2-setuptools (1:5.7-1 -> 1:5.8-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-base (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-xmlpatterns (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-declarative (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-graphicaleffects (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-imageformats (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-location (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-multimedia (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-sensors (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-webkit (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-script (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-quick1 (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-svg (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-translations (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [PACMAN] upgraded qt5-tools (5.3.1-1 -> 5.3.2-1)
+[2014-09-19 12:54] [ALPM-SCRIPTLET] Syslinux BIOS update successful
+[2014-09-19 12:54] [ALPM-SCRIPTLET] 
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> For setting up Syslinux BIOS using the syslinux-install_update script follow 
+[2014-09-19 12:54] [ALPM-SCRIPTLET]     https://wiki.archlinux.org/index.php/Syslinux#Automatic_Install
+[2014-09-19 12:54] [ALPM-SCRIPTLET] 
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> For setting up Syslinux EFI follow
+[2014-09-19 12:54] [ALPM-SCRIPTLET]     https://wiki.archlinux.org/index.php/Syslinux#UEFI_Systems
+[2014-09-19 12:54] [ALPM-SCRIPTLET] 
+[2014-09-19 12:54] [ALPM-SCRIPTLET] ==> The syslinux-install_update script does not currently support EFI install
+[2014-09-19 12:54] [ALPM-SCRIPTLET] 
+[2014-09-19 12:54] [PACMAN] upgraded syslinux (6.03pre19-1 -> 6.03pre20-1)
+[2014-09-19 12:54] [PACMAN] upgraded util-linux (2.25-3 -> 2.25.1-1)
+[2014-09-19 12:54] [ALPM-SCRIPTLET] In order to use the new version, reload all virtualbox modules manually.
+[2014-09-19 12:54] [PACMAN] upgraded virtualbox-host-modules (4.3.16-1 -> 4.3.16-2)
+[2014-09-19 12:54] [PACMAN] upgraded vpnc (0.5.3.svn527-2 -> 0.5.3.svn527-3)
+[2014-09-19 12:54] [PACMAN] upgraded xdebug (2.2.5-1 -> 2.2.5-2)
+[2014-09-19 12:54] [PACMAN] upgraded xz (5.0.5-2 -> 5.0.6-1)
