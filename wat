@@ -1,6 +1,6 @@
 #!/bin/sh
 log_lines() {
-  local regex='^.*\(starting full system upgrade\|upgraded.*\)$'
+  local regex='^.*\(starting full system upgrade\|upgraded.*\|installed.*\)$'
 
   sed "/$regex/!d; s//\1/" "$PACMAN_LOG"
 }
