@@ -1,12 +1,12 @@
 #!/bin/sh
 log_lines() {
-  local regex='^.*\(starting full system upgrade\|upgraded.*'
+  local regex
 
-  if [ "${SHOW_INSTALLED}" -eq "1" ]; then
-    regex="${regex}"'\|installed.*'
+  if [ "$SHOW_INSTALLED" -eq 1 ]; then
+    regex='^.*\(starting full system upgrade\|upgraded.*\|installed.*\)$'
+  else
+    regex='^.*\(starting full system upgrade\|upgraded.*\)$'
   fi
-
-  regex="${regex}"'\)$'
 
   sed "/$regex/!d; s//\1/" "$PACMAN_LOG"
 }
