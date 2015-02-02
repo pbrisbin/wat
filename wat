@@ -1,8 +1,8 @@
 #!/bin/sh
 log_lines() {
   local installed=''
-  if [ "x$SHOW_INSTALLED" == "x1" ]; then
       installed='\|installed.*'
+  if [ "${SHOW_INSTALLED}" -eq "1" ]; then
   fi
   local regex='^.*\(starting full system upgrade\|upgraded.*'$installed'\)$'
 
