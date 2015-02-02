@@ -29,11 +29,13 @@ mark_lines() {
 : ${PACMAN_LOG:=/var/log/pacman.log}
 : ${SHOW_INSTALLED:=0}
 
-while [ "${#}" -gt "0" ]; do
+while [ -n "$1" ]; do
   case "${1}" in
-    -i|--installed) SHOW_INSTALLED=1; shift ;;
+    -i|--installed) SHOW_INSTALLED=1 ;;
+    -l|--log) shift; PACMAN_LOG="$1" ;;
     *) break ;;
   esac
+  shift
 done
 
 end='$' # EOF
