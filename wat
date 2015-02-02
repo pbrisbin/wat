@@ -30,7 +30,7 @@ mark_lines() {
 : ${SHOW_INSTALLED:=0}
 
 while [ -n "$1" ]; do
-  case "${1}" in
+  case "$1" in
     -i|--installed) SHOW_INSTALLED=1 ;;
     -l|--log) shift; PACMAN_LOG="$1" ;;
     *) break ;;
