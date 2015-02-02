@@ -301,7 +301,7 @@ It accepst end as the second argument
   upgraded heroku-client-standalone (3.10.4-1 -> 3.10.5-1)
   4 starting full system upgrade
 
-And one test -i
+It includes installed entries when given -i
 
   $ run_it -i
   1 starting full system upgrade
