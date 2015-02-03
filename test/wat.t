@@ -307,7 +307,6 @@ It includes installed entries when given -i
   1 starting full system upgrade
   upgraded archlinux-keyring (20140220-1 -> 20140908-1)
   upgraded linux-api-headers (3.14.1-1 -> 3.16.2-1)
-  installed as /etc/locale.gen.pacnew
   upgraded glibc (2.19-5 -> 2.20-2)
   upgraded binutils (2.24-6 -> 2.24-7)
   upgraded ca-certificates-java (20140324-3 -> 20140324-4)
@@ -340,7 +339,6 @@ It includes installed entries when given -i
   upgraded perl-mime-types (2.06-1 -> 2.09-1)
   upgraded perl-mail-box (2.115-1 -> 2.117-1)
   installed libzip (0.11.2-1)
-  installed as /etc/php/php.ini.pacnew
   upgraded php (5.5.16-2 -> 5.6.0-6)
   upgraded python2-setuptools (1:5.7-1 -> 1:5.8-1)
   upgraded qt5-base (5.3.1-1 -> 5.3.2-1)
