@@ -20,7 +20,7 @@ Prints every package upgraded in `-Syu` 1.
 Prints every package upgraded in and since `-Syu` 3.
 
 ```
-% what 7 4
+% wat 7 4
 ```
 
 Prints every package upgraded in and since `-Syu` 7, but only until `-Syu` 4.
