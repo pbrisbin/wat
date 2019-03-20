@@ -1,6 +1,6 @@
 #!/bin/sh
 log_lines() {
-  local regex
+  regex
 
   if [ "$SHOW_INSTALLED" -eq 1 ]; then
     regex='^.*\[\(PACMAN\|ALPM\)\] \(starting full system upgrade\|upgraded.*\|installed.*\)$'
@@ -12,27 +12,30 @@ log_lines() {
 }
 
 mark_lines() {
-  local n=1
+  n=1
 
   while read -r line; do
     case "$line" in
       starting*)
         printf "%i " "$n"
-        n=$((n+1))
-      ;;
+        n=$((n + 1))
+        ;;
     esac
 
     printf "%s\n" "$line"
   done
 }
 
-: ${PACMAN_LOG:=/var/log/pacman.log}
-: ${SHOW_INSTALLED:=0}
+: "${PACMAN_LOG:=/var/log/pacman.log}"
+: "${SHOW_INSTALLED:=0}"
 
 while [ -n "$1" ]; do
   case "$1" in
-    -i|--installed) SHOW_INSTALLED=1 ;;
-    -l|--log) shift; PACMAN_LOG="$1" ;;
+    -i | --installed) SHOW_INSTALLED=1 ;;
+    -l | --log)
+      shift
+      PACMAN_LOG="$1"
+      ;;
     *) break ;;
   esac
   shift
