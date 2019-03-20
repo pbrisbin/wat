@@ -1,14 +1,22 @@
 #!/bin/sh
 log_lines() {
-  regex
-
-  if [ "$SHOW_INSTALLED" -eq 1 ]; then
-    regex='^.*\[\(PACMAN\|ALPM\)\] \(starting full system upgrade\|upgraded.*\|installed.*\)$'
+  if [ "$SHOW_TIMESTAMPS" -eq 1 ]; then
+    regex_start='\[\([^]]*\)\] '
+    replacement='\1 \3'
   else
-    regex='^.*\[\(PACMAN\|ALPM\)\] \(starting full system upgrade\|upgraded.*\)$'
+    regex_start='.*'
+    replacement='\2'
   fi
 
-  sed "/$regex/!d; s//\2/" "$PACMAN_LOG"
+  if [ "$SHOW_INSTALLED" -eq 1 ]; then
+    regex_end='\(starting full system upgrade\|upgraded.*\|installed.*\)'
+  else
+    regex_end='\(starting full system upgrade\|upgraded.*\)'
+  fi
+
+  regex='^'"$regex_start"'\[\(PACMAN\|ALPM\)\] '"$regex_end"'$'
+
+  sed "/$regex/!d; s//$replacement/" "$PACMAN_LOG"
 }
 
 mark_lines() {
@@ -16,7 +24,7 @@ mark_lines() {
 
   while read -r line; do
     case "$line" in
-      starting*)
+      *starting\ full\ system\ upgrade*)
         printf "%i " "$n"
         n=$((n + 1))
         ;;
@@ -28,10 +36,12 @@ mark_lines() {
 
 : "${PACMAN_LOG:=/var/log/pacman.log}"
 : "${SHOW_INSTALLED:=0}"
+: "${SHOW_TIMESTAMPS:=0}"
 
 while [ -n "$1" ]; do
   case "$1" in
     -i | --installed) SHOW_INSTALLED=1 ;;
+    -t | --timestamps) SHOW_TIMESTAMPS=1 ;;
     -l | --log)
       shift
       PACMAN_LOG="$1"
@@ -42,6 +52,10 @@ while [ -n "$1" ]; do
 done
 
 end='$' # EOF
-[ -n "$2" ] && end="/^$2 starting.*/"
+[ -n "$2" ] && end="/^\($2\) .*\(starting.*\)$/"
 
-log_lines | tac | mark_lines | tac | sed "/^${1:-1} starting.*/,$end !d"
+log_lines | tac | mark_lines | tac |
+  sed "
+    /^\(${1:-1}\) .*\(starting.*\)$/,$end !d;
+    s//\1 \2/;
+  "
