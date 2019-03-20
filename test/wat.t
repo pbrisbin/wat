@@ -361,3 +361,25 @@ It includes installed entries when given -i
   upgraded vpnc (0.5.3.svn527-2 -> 0.5.3.svn527-3)
   upgraded xdebug (2.2.5-1 -> 2.2.5-2)
   upgraded xz (5.0.5-2 -> 5.0.6-1)
+
+It shows no upgrades for invalid start/stop
+
+  $ run_it 2 3
+
+It shows no upgrades for equal start/stop
+
+  $ run_it 3 3
+
+It shows all if there are less upgrades than asked for
+
+  $ run_it 10 | head
+  9 starting full system upgrade
+  upgraded colord (1.2.0-1 -> 1.2.1-1)
+  upgraded cryptsetup (1.6.5-1 -> 1.6.5-2)
+  upgraded curl (7.37.0-1 -> 7.37.1-1)
+  upgraded iproute2 (3.14.0-1 -> 3.15.0-1)
+  upgraded docker (1:1.1.1-1 -> 1:1.1.2-2)
+  upgraded libtasn1 (3.6-1 -> 4.0-1)
+  upgraded gnutls (3.3.5-1 -> 3.3.6-1)
+  upgraded ffmpeg (1:2.2.4-3 -> 1:2.3-1)
+  upgraded git (2.0.2-1 -> 2.0.3-1)

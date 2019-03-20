@@ -51,11 +51,27 @@ while [ -n "$1" ]; do
   shift
 done
 
+n_start=${1:-1}
+n_max=$(grep -cF ' starting full system upgrade' "$PACMAN_LOG")
+
+# Print whole log if we've asked to start too far
+[ "$n_max" -lt "$n_start" ] && n_start=$n_max
+
 end='$' # EOF
-[ -n "$2" ] && end="/^\($2\) .*\(starting.*\)$/"
+
+if [ -n "$2" ]; then
+  n_stop=$2
+
+  if [ "$n_start" -le "$n_stop" ] || [ "$n_max" -lt "$n_stop" ]; then
+    # Empty or negative range, or non-intersecting with available log.
+    exit
+  fi
+
+  end="/^\($n_stop\) .*\(starting.*\)$/"
+fi
 
 log_lines | tac | mark_lines | tac |
   sed "
-    /^\(${1:-1}\) .*\(starting.*\)$/,$end !d;
+    /^\($n_start\) .*\(starting.*\)$/,$end !d;
     s//\1 \2/;
   "
