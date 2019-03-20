@@ -163,7 +163,7 @@ It accepts start as the first arguments
   upgraded xdebug (2.2.5-1 -> 2.2.5-2)
   upgraded xz (5.0.5-2 -> 5.0.6-1)
 
-It accepst end as the second argument
+It accepts end as the second argument
 
   $ run_it 7 4
   7 starting full system upgrade
